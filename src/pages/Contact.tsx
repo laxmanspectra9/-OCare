@@ -22,12 +22,12 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Call Us",
-    details: ["+91 98765 43210", "+91 98765 43211"],
+    details: ["+91-6367661851"],
   },
   {
     icon: Mail,
     title: "Email Us",
-    details: ["hello@ocare.in", "support@ocare.in"],
+    details: ["info@ocare.in"],
   },
   {
     icon: Clock,

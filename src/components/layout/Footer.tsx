@@ -59,11 +59,11 @@ export const Footer = () => {
                 </div>
                 <div className="flex items-center gap-3 text-background/70">
                   <Phone size={20} className="text-primary" />
-                  <span className="text-sm">+91 98765 43210</span>
+                  <span className="text-sm"><a href="tel:+91-6367661851">+91-6367661851</a></span>
                 </div>
                 <div className="flex items-center gap-3 text-background/70">
                   <Mail size={20} className="text-primary" />
-                  <span className="text-sm">hello@ocare.in</span>
+                  <span className="text-sm">info@ocare.in</span>
                 </div>
               </div>
             </motion.div>

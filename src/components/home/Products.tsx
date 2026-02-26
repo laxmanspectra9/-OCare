@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Clock, Zap, Droplets, Battery } from "lucide-react";
+import { ArrowRight, Clock, Zap, Droplets, Battery,MessageCircle  } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import normalFlosser from "@/assets/1.jpeg";
 import travelKit from "@/assets/travel-kit.png";
-
+const WHATSAPP_NUMBER = "916367661851"; 
 const products = [
   {
     id: 1,
@@ -132,17 +132,22 @@ export const Products = () => {
                     })}
                   </div>
 
-                  {!product.isUpcoming && (
-                    <Link to="/contact" className="block w-full">
-                      <Button 
-                        variant="outline" 
-                        className="w-full group/btn"
-                      >
-                        Learn More
-                        <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
-                      </Button>
-                    </Link>
-                  )}
+                {!product.isUpcoming && (
+                <a
+                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+                    `Hello, I am interested in:\n${product.name}\nPlease guide me further.`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full"
+                >
+                  <Button className="w-full bg-green-500 hover:bg-green-600 text-white">
+                    <MessageCircle size={18} className="group-hover:scale-110 transition-transform" />
+                    Order on WhatsApp
+                    <ArrowRight size={16} className="ml-2 transition-transform" />
+                  </Button>
+                </a>
+              )}
                 </div>
               </div>
             </motion.div>
