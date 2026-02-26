@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Clock, Zap, Droplets, Battery } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import normalFlosser from "@/assets/normal-flosser.png";
+import normalFlosser from "@/assets/1.jpeg";
 import travelKit from "@/assets/travel-kit.png";
 
 const products = [
